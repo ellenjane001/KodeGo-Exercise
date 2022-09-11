@@ -1,0 +1,85 @@
+// color pallete
+$c1: #F9F7F7;
+$c2: #3F72AF;
+$c3: #DBE2EF;
+$c4: #112D4E;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html {
+
+    body {
+        min-height: 80vh;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: $c1;
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            gap:8px;
+            height: 75px;
+            box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
+            -webkit-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
+            -moz-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
+            padding: 3px 15px;
+
+            h1 {
+                padding: 0;
+                margin: 0;
+            }
+
+            color:$c3;
+            background-color: $c2;
+        }
+
+        div.container {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+
+            div.section-container {
+                text-align: center;
+                padding: 1rem;
+                display: inline-flex;
+                flex-direction: column;
+
+                div.button-container {
+                    height: 100%;
+                    margin: 0.5rem;
+
+                    a {
+                        border: solid 0.01px $c2;
+                        padding: 0.3rem;
+                        color: $c2;
+                        text-decoration: none;
+                        border-radius: 15px;
+
+                        &:visited {
+                            color: $c2;
+                        }
+
+                        &:hover {
+                            color: $c4;
+                            border: solid 0.01px $c4;
+
+                        }
+                    }
+                }
+
+
+
+                h4 {
+                    color: $c4;
+                    margin: 0;
+                    padding: 1rem;
+                }
+
+
+            }
+        }
+    }
+}
