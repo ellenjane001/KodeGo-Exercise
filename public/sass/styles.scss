@@ -1,26 +1,21 @@
-// color pallete
-$c1: #F9F7F7;
-$c2: #3F72AF;
-$c3: #DBE2EF;
-$c4: #112D4E;
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import 'partials/colors';
+@import 'partials/fonts';
 
 html {
 
     body {
-        min-height: 80vh;
         box-sizing: border-box;
         padding: 0;
         margin: 0;
         font-family: 'Inter', sans-serif;
-        background-color: $c1;
+        background-color: $c4;
 
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-direction: row-reverse;
-            gap:8px;
+            gap: 8px;
             height: 75px;
             box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
             -webkit-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
@@ -32,8 +27,8 @@ html {
                 margin: 0;
             }
 
-            color:$c3;
-            background-color: $c2;
+            color:$c1;
+            background-color: $c3;
         }
 
         div.container {
@@ -50,30 +45,31 @@ html {
                 div.button-container {
                     height: 100%;
                     margin: 0.5rem;
+                    gap: 10px;
+                    display: inline-flex;
+                    justify-content: center;
 
                     a {
-                        border: solid 0.01px $c2;
-                        padding: 0.3rem;
-                        color: $c2;
+                        border: solid 0.01px $c3;
+                        padding: 0.5rem;
+                        color: $c3;
                         text-decoration: none;
-                        border-radius: 15px;
+                        border-radius: 5px;
 
                         &:visited {
-                            color: $c2;
+                            color: $c3;
                         }
 
                         &:hover {
-                            color: $c4;
-                            border: solid 0.01px $c4;
+                            color: $c3;
+                            border: solid 0.01px $c1;
 
                         }
                     }
                 }
 
-
-
                 h4 {
-                    color: $c4;
+                    color: $c3;
                     margin: 0;
                     padding: 1rem;
                 }

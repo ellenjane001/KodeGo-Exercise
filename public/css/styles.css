@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 html body {
-  min-height: 80vh;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #F9F7F7;
+  background-color: #EEEEEE;
 }
 html body header {
   display: flex;
@@ -18,8 +17,8 @@ html body header {
   -webkit-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.4);
   padding: 3px 15px;
-  color: #DBE2EF;
-  background-color: #3F72AF;
+  color: #FBD46D;
+  background-color: #222831;
 }
 html body header h1 {
   padding: 0;
@@ -39,23 +38,26 @@ html body div.container div.section-container {
 html body div.container div.section-container div.button-container {
   height: 100%;
   margin: 0.5rem;
+  gap: 10px;
+  display: inline-flex;
+  justify-content: center;
 }
 html body div.container div.section-container div.button-container a {
-  border: solid 0.01px #3F72AF;
-  padding: 0.3rem;
-  color: #3F72AF;
+  border: solid 0.01px #222831;
+  padding: 0.5rem;
+  color: #222831;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 html body div.container div.section-container div.button-container a:visited {
-  color: #3F72AF;
+  color: #222831;
 }
 html body div.container div.section-container div.button-container a:hover {
-  color: #112D4E;
-  border: solid 0.01px #112D4E;
+  color: #222831;
+  border: solid 0.01px #FBD46D;
 }
 html body div.container div.section-container h4 {
-  color: #112D4E;
+  color: #222831;
   margin: 0;
   padding: 1rem;
 }/*# sourceMappingURL=styles.css.map */
