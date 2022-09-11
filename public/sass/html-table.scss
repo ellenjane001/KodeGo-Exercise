@@ -1,0 +1,34 @@
+html {
+    body {
+        box-sizing: border-box;
+
+        main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+            table {
+                border: solid gainsboro 0.01px;
+
+                thead {
+                    tr {
+                        th {
+                            border: solid gainsboro 0.01px;
+                            padding: 20px;
+                        }
+                    }
+
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            border: solid gainsboro 0.01px;
+                            text-align: center;
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
