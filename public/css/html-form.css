@@ -1,0 +1,24 @@
+html body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body form {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+html body form div {
+  width: 50%;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 20px;
+}
+html body form div .form-lbls {
+  justify-self: flex-start;
+}
+html body form div > * {
+  justify-content: end;
+}/*# sourceMappingURL=html-form.css.map */
