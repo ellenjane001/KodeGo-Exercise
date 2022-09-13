@@ -48,7 +48,7 @@ html {
                     gap: 10px;
                     display: inline-flex;
                     justify-content: center;
-
+                    flex-wrap: wrap;
                     a {
                         border: solid 0.01px $c3;
                         padding: 0.5rem;

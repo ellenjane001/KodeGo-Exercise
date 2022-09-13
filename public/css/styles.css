@@ -41,6 +41,7 @@ html body div.container div.section-container div.button-container {
   gap: 10px;
   display: inline-flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 html body div.container div.section-container div.button-container a {
   border: solid 0.01px #222831;
