@@ -5,25 +5,19 @@ html {
         align-items: center;
 
         form {
-            width: 75%;
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items: center;
+            align-items: stretch;
 
             div {
-                width: 50%;
+                flex-basis: 100%;
                 display: inline-flex;
                 flex-direction: row;
                 gap: 20px;
+                justify-content: space-between;
 
-                .form-lbls {
-                    justify-self: flex-start;
-                }
-
-                &>* {
-                    justify-content: end;
-                }
             }
         }
     }
