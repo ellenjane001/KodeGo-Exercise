@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nunito&family=Raleway:ital,wght@1,700&display=swap");
+html body {
+  box-sizing: border-box;
+  background-color: #222831;
+  color: #EEEEEE;
+  font-family: "Nunito", sans-serif;
+}
+html body main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body main h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #FFD369;
+}
+html body main h2 {
+  font-family: "Lora", serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FF7EBC;
+}
+html body main h3 {
+  color: #FFD369;
+}
+html body main a {
+  text-decoration: none;
+  color: #C2FCF2;
+  font-style: italic;
+}
+html body main a::after {
+  content: "...";
+}
+html body main article {
+  border: solid 0.01px #393E46;
+  padding: 10px;
+}
+html body main article#article-one {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+html body main article#article-one div img {
+  height: 300px;
+  width: auto;
+  border-radius: 20px;
+  border: solid 5px #393E46;
+}
+html body main article#article-one div img:hover {
+  height: 325px;
+  border: solid 5px #FFD369;
+}
+html body main article#article-one .article-one--p {
+  width: 60%;
+  text-align: center;
+  border: dashed 0.01px #C2FCF2;
+  padding: 10px;
+  margin: 0;
+}
+html body main article#article-one p#paragraph-two span#example-container span#author-name {
+  font-style: italic;
+  color: #FF7EBC;
+}
+html body main article#article-one p#paragraph-two span#example-container span.braces {
+  color: #00D8FF;
+}
+html body main article#article-one p#paragraph-two span#example-container span#css-property-value {
+  color: #C2FCF2;
+}
+html body main article#article-one section {
+  width: 60%;
+  border: dashed 0.01px #C2FCF2;
+  padding: 10px;
+  text-align: center;
+}
+html body main article#article-one section h3 {
+  margin: 0;
+}
+html body main article#article-one section p {
+  margin: 0;
+}
+html body main article#article-two p {
+  text-align: center;
+}
+html body main article#article-two p span#brackets {
+  color: #00D8FF;
+}
+html body main article#article-two p span#attrib-select-wrapper span#attrib-selector {
+  color: #FFD369;
+}
+html body main article#article-two p span#attrib-select-wrapper span#selector-value {
+  color: #00D8FF;
+}
+html body main article#article-three p {
+  text-align: center;
+}
+html body main article#article-three p#art-3-p3 {
+  height: 100px;
+}/*# sourceMappingURL=css-exercise.css.map */
