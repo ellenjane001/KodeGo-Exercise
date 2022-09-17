@@ -101,4 +101,10 @@ html body main article#article-three p {
 }
 html body main article#article-three p#art-3-p3 {
   height: 100px;
+}
+html body main article#article-four p {
+  text-align: center;
+}
+html body main article#article-four p#art-4-p3 {
+  color: #00D8FF;
 }/*# sourceMappingURL=css-exercise.css.map */
