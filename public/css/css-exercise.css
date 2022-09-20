@@ -115,4 +115,15 @@ html body main article#article-four p:nth-child(1) {
 html body main article#article-four p#art-4-p3 {
   color: #C2FCF2;
   border: dashed 0.01px #FF7EBC;
+}
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  article#article-one > div > img {
+    width: 420px !important;
+    height: 180px !important;
+  }
+  article#article-one > div > img:hover {
+    height: 250px;
+    border: solid 5px #FFD369;
+  }
 }/*# sourceMappingURL=css-exercise.css.map */
