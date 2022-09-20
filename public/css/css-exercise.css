@@ -117,7 +117,7 @@ html body main article#article-four p#art-4-p3 {
   border: dashed 0.01px #FF7EBC;
 }
 
-@media screen and (max-width: 700px) and (min-width: 200px) {
+@media screen and (max-width: 900px) and (min-width: 200px) {
   article#article-one > div > img {
     width: 420px !important;
     height: 180px !important;
