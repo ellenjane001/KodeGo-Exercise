@@ -105,6 +105,9 @@ html body main article#article-three p {
 }
 html body main article#article-four {
   text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 html body main article#article-four p {
   text-align: center;
@@ -115,6 +118,8 @@ html body main article#article-four p:nth-child(1) {
 html body main article#article-four p#art-4-p3 {
   color: #C2FCF2;
   border: dashed 0.01px #FF7EBC;
+  width: 60%;
+  padding: 6px 0;
 }
 
 @media screen and (max-width: 900px) and (min-width: 200px) {
