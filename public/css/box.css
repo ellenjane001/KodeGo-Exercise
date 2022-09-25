@@ -1,30 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Vollkorn:wght@700&display=swap");
 html body {
   box-sizing: border-box;
+  height: 90vh;
+  margin: 0;
+}
+html body a {
+  color: black;
 }
 html body header {
   text-align: center;
 }
+html body header h1 {
+  font-family: "Vollkorn", serif;
+}
+html body nav {
+  position: relative;
+  height: 80px;
+  vertical-align: middle;
+}
 html body nav ul {
   list-style: none;
+  margin: 0;
+  position: absolute;
+  left: 42%;
+  padding: 0;
+}
+html body nav ul li {
+  float: left;
+  width: 100px;
+  line-height: 80px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+}
+html body nav ul li a {
+  font-family: "Abyssinica SIL", serif;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+html body nav ul li a:hover {
+  text-decoration: underline;
 }
 html body aside.aleft {
   float: left;
-  width: 20%;
+  width: 25%;
 }
-html body aside.aleft img {
+html body aside.aleft figure img {
   width: 100%;
+  border: solid 0.01px;
 }
 html body section {
-  width: 60%;
-  border-left: dashed 1px;
-  display: inline-block;
-  border-right: dashed 1px;
+  float: left;
+  width: 50%;
+  border-left: dashed 1px gainsboro;
+  border-right: dashed 1px gainsboro;
   padding: 10px;
+  height: 83%;
 }
-html body aside.aright {
-  float: right;
-  width: 20%;
+html body section h1 {
+  text-transform: uppercase;
 }
-html body aside.aright img {
+html body i {
+  width: 23%;
+  font-style: normal;
+}
+html body i i {
+  float: left;
+  width: 23%;
+}
+html body i i aside.aright img {
   width: 100%;
+}
+html body i i footer {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+html body i i p {
+  position: absolute;
+  left: 26%;
 }/*# sourceMappingURL=box.css.map */
