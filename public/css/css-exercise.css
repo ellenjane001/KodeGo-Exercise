@@ -121,6 +121,25 @@ html body main article#article-four p#art-4-p3 {
   width: 60%;
   padding: 6px 0;
 }
+html body main div.back {
+  position: absolute;
+  top: 90%;
+  left: 95%;
+  display: inline-block;
+}
+html body main div.back a#back {
+  text-decoration: none;
+}
+html body main div.back a#back::after {
+  content: "";
+}
+html body main div.back a#back img {
+  background-color: #FBD46D;
+  border-radius: 50%;
+  padding: 10px;
+  height: 24px;
+  width: 24px;
+}
 
 @media screen and (max-width: 900px) and (min-width: 200px) {
   article#article-one > div > img {

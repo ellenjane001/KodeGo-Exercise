@@ -83,4 +83,20 @@ html body i i footer {
 html body i i p {
   position: absolute;
   left: 26%;
+}
+html body div.back {
+  position: absolute;
+  top: 90%;
+  left: 95%;
+  display: inline-block;
+}
+html body div.back a#back {
+  text-decoration: none;
+}
+html body div.back a#back img {
+  background-color: #FBD46D;
+  border-radius: 50%;
+  padding: 10px;
+  height: 24px;
+  width: 24px;
 }/*# sourceMappingURL=box.css.map */
