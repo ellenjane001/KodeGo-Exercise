@@ -1,0 +1,31 @@
+@import 'partials/colors';
+
+html {
+    body {
+        div.container {
+            position: relative;
+
+            div.back {
+                display: inline-block;
+                position: -webkit-sticky;
+                position: sticky;
+                bottom: 0;
+                font-size: 20px;
+                z-index: 1;
+
+                a#back {
+
+                    text-decoration: none;
+
+                    img {
+                        background-color: $c1;
+                        border-radius: 50%;
+                        padding: 10px;
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

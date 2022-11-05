@@ -1,0 +1,15 @@
+html {
+    body {
+        box-sizing: border-box;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            iframe {
+                border: solid 0.01px gainsboro;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+html body div.container {
+  position: relative;
+}
+html body div.container div.back {
+  display: inline-block;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  font-size: 20px;
+  z-index: 1;
+}
+html body div.container div.back a#back {
+  text-decoration: none;
+}
+html body div.container div.back a#back img {
+  background-color: #FBD46D;
+  border-radius: 50%;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+}/*# sourceMappingURL=js-index.css.map */

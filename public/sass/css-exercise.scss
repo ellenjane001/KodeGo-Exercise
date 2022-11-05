@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nunito&family=Raleway:ital,wght@1,700&display=swap');
+@import 'partials/colors';
+
+html {
+    body {
+        box-sizing: border-box;
+        background-color: $one ;
+        color: $four;
+        font-family: 'Nunito', sans-serif;
+
+        main {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 50px;
+                text-align: center;
+                color: $three;
+            }
+
+            h2 {
+                font-family: 'Lora', serif;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                text-align: center;
+                color: $wildcard1;
+            }
+
+            h3 {
+                color: $three;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: $wildcard3;
+                font-style: italic;
+
+                &::after {
+                    content: '...';
+                }
+            }
+
+            article {
+                border: solid 0.01px $two;
+                padding: 10px;
+            }
+
+            article#article-one {
+
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                div {
+
+                    img {
+                        height: 300px;
+                        width: auto;
+                        border-radius: 20px;
+                        border: solid 5px $two;
+
+                        &:hover {
+                            height: 325px;
+                            border: solid 5px $three;
+                        }
+
+
+                    }
+
+                }
+
+                .article-one--p {
+                    width: 60%;
+                    text-align: center;
+                    border: dashed 0.01px $wildcard3;
+                    padding: 10px;
+                    margin: 0;
+                }
+
+                p#paragraph-two {
+                    span#example-container {
+                        span#author-name {
+                            font-style: italic;
+                            color: $wildcard1;
+                        }
+
+                        span.braces {
+                            color: $wildcard2;
+                        }
+
+                        span#css-property-value {
+                            color: $wildcard3;
+                        }
+                    }
+                }
+
+                section {
+                    width: 60%;
+                    border: dashed 0.01px $wildcard3;
+                    padding: 10px;
+                    text-align: center;
+
+                    h3 {
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            article#article-two {
+                p {
+                    text-align: center;
+
+                    span#brackets {
+                        color: $wildcard2;
+                    }
+
+                    span#attrib-select-wrapper {
+                        span#attrib-selector {
+                            color: $three;
+                        }
+
+                        span#selector-value {
+                            color: $wildcard2;
+                        }
+                    }
+                }
+            }
+
+            article#article-three {
+                text-align: center;
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            article#article-four {
+                text-align: center;
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                p {
+                    text-align: center;
+
+                    &:nth-child(1) {
+                        text-align: center;
+                    }
+                }
+
+                p#art-4-p3 {
+                    color: $wildcard3;
+                    border: dashed 0.01px $wildcard1;
+                    width: 60%;
+                    padding: 6px 0;
+                }
+            }
+
+            div.back {
+                position: absolute;
+                top: 90%;
+                left: 95%;
+                display: inline-block;
+
+
+
+                a#back {
+
+                    text-decoration: none;
+
+                    &::after {
+                        content: '';
+                    }
+
+                    img {
+                        background-color: $c1;
+                        border-radius: 50%;
+                        padding: 10px;
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 200px) {
+    article#article-one>div>img {
+        width: 420px !important;
+        height: 180px !important;
+
+        &:hover {
+            height: 250px;
+            border: solid 5px $three;
+        }
+    }
+
+}

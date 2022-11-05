@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Vollkorn:wght@700&display=swap');
+@import 'partials/colors';
+
+html {
+    body {
+        box-sizing: border-box;
+        height: 90vh;
+        margin: 0;
+
+        a {
+            color: black;
+        }
+
+        header {
+            text-align: center;
+
+            h1 {
+                font-family: 'Vollkorn', serif;
+            }
+        }
+
+        nav {
+            position: relative;
+            height: 80px;
+            vertical-align: middle;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                position: absolute;
+                left: 42%;
+                padding: 0;
+
+                li {
+                    float: left;
+                    width: 100px;
+                    line-height: 80px;
+                    vertical-align: middle;
+                    text-align: center;
+                    margin: 0;
+
+                    a {
+                        font-family: 'Abyssinica SIL', serif;
+                        color: black;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        aside.aleft {
+            float: left;
+            width: 25%;
+
+            figure {
+                img {
+                    width: 100%;
+                    border: solid 0.01px;
+                }
+            }
+        }
+
+        section {
+            float: left;
+            width: 50%;
+            border-left: dashed 1px gainsboro;
+            border-right: dashed 1px gainsboro;
+            padding: 10px;
+            height: 83%;
+
+            h1 {
+                text-transform: uppercase;
+            }
+        }
+
+        i {
+            width: 23%;
+            font-style: normal;
+
+            i {
+                float: left;
+                width: 23%;
+
+
+                aside.aright {
+
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                footer {
+                    position: absolute;
+                    top: 95%;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                p {
+                    position: absolute;
+                    left: 26%;
+                }
+            }
+
+        }
+
+        div.back {
+            position: absolute;
+            top: 90%;
+            left: 95%;
+            display: inline-block;
+
+            a#back {
+
+                text-decoration: none;
+
+                img {
+                    background-color: $c1;
+                    border-radius: 50%;
+                    padding: 10px;
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+}

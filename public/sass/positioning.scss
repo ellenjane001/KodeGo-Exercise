@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Vollkorn:wght@700&display=swap');
+@import 'partials/colors';
+
+html {
+    body {
+        box-sizing: border-box;
+        height: 200%;
+        overflow: auto;
+        position: relative;
+        background-color: lightgrey;
+        margin: 0;
+        font-family: 'Abyssinica SIL', serif;
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            padding: 10px 0 50px 0;
+            margin: 0;
+
+            h1 {
+                font-family: 'Vollkorn', serif;
+            }
+
+            a {
+                background-color: #FF006E;
+                padding: 10px;
+                text-decoration: none;
+                color: #ffffff;
+                border: solid 0.01px black;
+            }
+        }
+
+        div.container {
+            height: 100%;
+
+            img {
+                width: 300px;
+            }
+
+            div.right-side-div {
+                float: right;
+                width: 19%;
+                border-left: solid 0.01px gainsboro;
+                padding: 0 45px;
+            }
+
+            div.left-side-div#left-div1 {
+                width: 75%;
+                padding: 0 10px;
+                position: relative;
+                background-color: #ffffff;
+                padding: 20px 0 10px 20px;
+                margin: 10px 0 0 0;
+
+                img {
+                    width: 500px;
+                }
+
+                div.alert {
+                    position: absolute;
+                    top: 2%;
+                    left: 94%;
+
+                    button#btn1 {
+                        background-color: #BE6F28;
+                        border-radius: 3px;
+                        border: none;
+                        color: #ffffff;
+                        padding: 15px;
+                    }
+
+
+                }
+            }
+
+            div.left-side-div#left-div2 {
+                width: 75%;
+                padding: 0 10px;
+                position: relative;
+                background-color: #ffffff;
+                padding: 20px 0 10px 20px;
+                margin: 10px 0 0 0;
+
+                img {
+                    width: 500px;
+                }
+
+                div.alert {
+                    position: absolute;
+                    top: 2%;
+                    left: 94%;
+
+
+
+                    button#btn2 {
+                        background-color: #BE6F28;
+                        border-radius: 3px;
+                        border: none;
+                        color: #ffffff;
+                        padding: 15px;
+                    }
+
+
+                }
+            }
+
+            div.promo {
+                position: -webkit-sticky;
+                position: sticky;
+                bottom: 0;
+                font-size: 20px;
+                z-index: 1;
+
+
+
+                button {
+                    color: #ffffff;
+                    background-color: red;
+                    padding: 10px 150px;
+                    border: none;
+                }
+
+
+
+            }
+
+            div.back {
+                position: sticky;
+                display: inline-block;
+
+                a#back {
+
+                    text-decoration: none;
+
+                    img {
+                        background-color: $c1;
+                        border-radius: 50%;
+                        padding: 10px;
+                        height: 24px;
+                        width: 24px;
+                    }
+                }
+            }
+
+
+        }
+
+
+
+    }
+}

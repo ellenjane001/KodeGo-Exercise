@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Exercises - Grocery Items</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../public/css/js-1-grocery-items.css">
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
+        defer></script>
+</head>
+<body onload="fetch_groceries()">
+    <main>
+        <div class="container-fluid d-flex ps-xl-4">
+            <div class="back d-flex align-items-center gap-3 p-2">
+                <a id="back" href="../index.html"><i class="fa-solid fa-house fa-flip fa-2x"
+                        style="--fa-animation-duration: 4s;"></i></a>
+                <a href="./index.html"><i class="fa-brands fa-square-js fa-flip fa-2x"
+                        style="--fa-animation-duration: 4s;"></i></a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card m-3">
+                        <div class="card-header text-center">
+                            <h2>Solution Script</h2>
+                        </div>
+                        <div class="card-body text-bg-dark">
+                            <span>for (let i = 0; i &gt; groceries_array.length; i++) </span>
+                            <p class="text-warning">{</p>
+                            <p>var <strong class="text-primary">li</strong>=document.createElement("<strong
+                                    class="text-primary">li</strong>")</p>
+                            <p><strong class="text-primary">li</strong>.classList.add('list-group-item') </p>
+                            <p>var <strong class="text-danger">ul</strong>=document.getElementById('root')</p>
+                            <p><strong
+                                    class="text-primary">li</strong>.appendChild(document.createTextNode(groceries_array[i]));
+                            </p>
+                            <p><strong class="text-danger">ul</strong>.appendChild(<strong
+                                    class="text-primary">li</strong>)</p>
+                            <span class="text-warning"> }</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card m-3">
+                        <div class="card-header text-center text-bg-success">
+                            <h2>Grocery Items</h2>
+                        </div>
+                        <div class="card-body d-flex flex-column gap-2">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="grocery-item">
+                                <label for="grocery-item">Add Grocery Item</label>
+                            </div>
+                            <button class="btn btn-outline-success" id="add-item">Add</button>
+                            <div id="list-wrapper" class="overflow-auto">
+                                <ul id="root" class="list-group list-group-flush border">
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer text-bg-success">
+                            <span id="count"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </main>
+    <!-- custom js -->
+    <script src="../public/js/1-grocery-items.js"></script>
+</body>
+</html>

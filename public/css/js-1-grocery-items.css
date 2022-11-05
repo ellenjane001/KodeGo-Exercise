@@ -1,0 +1,6 @@
+html body main div.card-body p {
+  margin: 0;
+}
+html body main div.card-body div#list-wrapper {
+  height: 500px;
+}/*# sourceMappingURL=js-1-grocery-items.css.map */

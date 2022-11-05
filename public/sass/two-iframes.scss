@@ -1,0 +1,27 @@
+@import 'partials/fonts';
+
+html {
+    body {
+        box-sizing: border-box;
+        height: 80vh;
+
+        main {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            iframe {
+                height: 100%;
+
+                &:nth-child(1) {
+                    width: 30%;
+                }
+
+                &:nth-child(2) {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
