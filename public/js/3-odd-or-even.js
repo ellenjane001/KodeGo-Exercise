@@ -15,6 +15,8 @@ const odd_or_even = () => {
 }
 document.getElementById('verifier').onclick = odd_or_even
 const alertPlaceholder = document.getElementById('result')
+
+// bootstrap alert
 const alert = (message, type) => {
     const wrapper = document.createElement('div')
     wrapper.innerHTML = [

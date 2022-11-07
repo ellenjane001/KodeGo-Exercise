@@ -22,8 +22,10 @@
         <!-- navigation -->
         <div class="container-fluid d-flex ps-xl-4">
             <div class="back d-flex align-items-center gap-3 p-2">
+                <!-- back to index -->
                 <a id="back" href="../index.html"><i class="fa-solid fa-house fa-flip fa-2x"
                         style="--fa-animation-duration: 4s;"></i></a>
+                <!-- return to JS Exercises Index -->
                 <a href="./index.html"><i class="fa-brands fa-square-js fa-flip fa-2x"
                         style="--fa-animation-duration: 4s;"></i></a>
             </div>
@@ -39,18 +41,20 @@
                         <div class="card-body text-bg-dark">
                             <p>const odd_or_even = () => {</p>
                             <p>let val = document.getElementById('number')</p>
-                            <p>if (val.value !== '') {</p>
-                            <p>let valNum = parseInt(val.value)</p>
-                            <p>if (valNum % 2 === 0) {</p>
-                            <p>alert(`${valNum} is an EVEN Number`, 'success')</p>
-                            <p>val.value = ''</p>
-                            <p>}</p>
-                            <p>else if (valNum % 2 !== 0) {</p>
-                            <p>alert(`${valNum} is an ODD Number`, 'warning')</p>
-                            <p>val.value = ''</p>
-                            <p>}</p>
-                            <p>} else</p>
-                            <p>val.style.border = 'red 1px solid'</p>
+                            <p class="ps-2">if (val.value !== '') {</p>
+                            <p class="ps-3">let <strong class="text-primary">valNum </strong> = parseInt(val.value)</p>
+                            <p class="ps-3">if (<strong class="text-primary">valNum</strong> % 2 === 0) {</p>
+                            <p class="ps-4">alert(`${<strong class="text-primary">valNum</strong>} is an EVEN Number`,
+                                '<strong class="text-success">success</strong>')</p>
+                            <p class="ps-4">val.value = ''</p>
+                            <p class="ps-3">}</p>
+                            <p class="ps-3">else if (<strong class="text-primary">valNum</strong> % 2 !== 0) {</p>
+                            <p class="ps-4">alert(`${<strong class="text-primary">valNum</strong>} is an ODD Number`,
+                                '<strong class="text-warning">warning</strong>')</p>
+                            <p class="ps-4">val.value = ''</p>
+                            <p class="ps-3">}</p>
+                            <p class="ps-2">} else</p>
+                            <p class="ps-3">val.style.border = 'red 1px solid'</p>
                             <p>}</p>
                             <p>document.getElementById('verifier').onclick = odd_or_even</p>
                         </div>

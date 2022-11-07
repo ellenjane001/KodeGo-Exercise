@@ -8,6 +8,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../public/css/js-4-temp-converter.css">
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
     <!-- JavaScript Bundle with Popper -->
@@ -17,14 +19,68 @@
 </head>
 <body>
     <main>
+        <!-- navigation -->
         <div class="container-fluid d-flex ps-xl-4">
             <div class="back d-flex align-items-center gap-3 p-2">
+                <!-- back to index -->
                 <a id="back" href="../index.html"><i class="fa-solid fa-house fa-flip fa-2x"
                         style="--fa-animation-duration: 4s;"></i></a>
+                <!-- return to JS Exercises Index -->
                 <a href="./index.html"><i class="fa-brands fa-square-js fa-flip fa-2x"
                         style="--fa-animation-duration: 4s;"></i></a>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <!-- solution -->
+                <div class="col">
+                    <div class="card m-3">
+                        <div class="card-header text-center">
+                            <h2>Solution Script</h2>
+                        </div>
+                        <div class="card-body text-bg-dark">
+                            <p>let celsius = document.getElementById('celsius-temp')</p>
+                            <p>let fahrenheit = document.
+                                getElementById('fahrenheit-temp')</p>
+                            <p>celsius.oninput = (e) => {</p>
+                            <p class="ps-2">if (e.target.value !== '')</p>
+                            <p class="ps-4">fahrenheit.value = parseFloat((parseFloat(e.target.value) * 1.8) +
+                                32).toFixed(2)</p>
+                            <e. class="ps-2">else if (e.target.value === '' || e.target.value === 0)</p>
+                                <p class="ps-4">fahrenheit.value = 0</p>
+                                <p>}</p>
+                                <p>fahrenheit.oninput = (e) => {</p>
+                                <p class="ps-2">if (e.target.value !== '')</p>
+                                <p class="ps-4">celsius.value = parseFloat((parseFloat(e.target.value) - 32) /
+                                    1.8).toFixed(2)</p>
+                                <p class="ps-2">else if (e.target.value === '' || e.target.value === 0)</p>
+                                <p class="ps-4">celsius.value = 0</p>
+                                <p>}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- output -->
+                <div class="col">
+                    <div class="card m-3">
+                        <div class="card-header text-center">
+                            <h2>Temperature Converter</h2>
+                        </div>
+                        <div class="card-body d-flex flex-column gap-2">
+                            <div class="form-floating">
+                                <input type="number" name="" id="celsius-temp" class="form-control" value="0">
+                                <label for="celsius-temp">Celsius</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="number" name="" id="fahrenheit-temp" class="form-control" value="0">
+                                <label for="fahrenheit-temp">Fahrenheit</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <!-- custom js -->
+    <script src="../public/js/4-temperature-converter.js" defer></script>
 </body>
 </html>
