@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"js-6-day-greetings.css"}
+{"version":3,"sources":["../sass/js-6-day-greetings.scss","js-6-day-greetings.css"],"names":[],"mappings":"AAIgB;EACI,SAAA;ACHpB","file":"js-6-day-greetings.css"}
