@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +18,11 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer></script>
 </head>
+
 <body>
     <main>
         <!-- navigation -->
-        <div class="container-fluid d-flex ps-xl-4">
+        <div class="container d-flex ps-xl-4">
             <div class="back d-flex align-items-center gap-3 p-2">
                 <!-- back to index -->
                 <a id="back" href="../index.html"><i class="fa-solid fa-house fa-flip fa-2x"
@@ -39,23 +41,41 @@
                             <h2>Solution Script</h2>
                         </div>
                         <div class="card-body text-bg-dark">
-                            <p>let celsius = document.getElementById('celsius-temp')</p>
-                            <p>let fahrenheit = document.
-                                getElementById('fahrenheit-temp')</p>
-                            <p>celsius.oninput = (e) => {</p>
-                            <p class="ps-2">if (e.target.value !== '')</p>
-                            <p class="ps-4">fahrenheit.value = parseFloat((parseFloat(e.target.value) * 1.8) +
-                                32).toFixed(2)</p>
-                            <e. class="ps-2">else if (e.target.value === '' || e.target.value === 0)</p>
-                                <p class="ps-4">fahrenheit.value = 0</p>
-                                <p>}</p>
-                                <p>fahrenheit.oninput = (e) => {</p>
-                                <p class="ps-2">if (e.target.value !== '')</p>
-                                <p class="ps-4">celsius.value = parseFloat((parseFloat(e.target.value) - 32) /
-                                    1.8).toFixed(2)</p>
-                                <p class="ps-2">else if (e.target.value === '' || e.target.value === 0)</p>
-                                <p class="ps-4">celsius.value = 0</p>
-                                <p>}</p>
+                            <p>const <strong class="text-info">converter</strong> = (<strong
+                                    class="text-success">equivalent</strong>,
+                                value) => {</p>
+                            <p class="ps-2"> if (value !== '') {</p>
+                            <p class="ps-3"> switch (<strong class="text-success">equivalent</strong>) {</p>
+                            <p class="ps-4"> case '<strong class="text-warning">celsius</strong>':</p>
+                            <p class="ps-5"> document.getElementById( &#96; ${<strong
+                                    class="text-success">equivalent</strong>}-temp &#96;
+                                ).value =
+                                parseFloat((parseFloat(value) -
+                                32) / 1.8).toFixed(2)</p>
+                            <p class="ps-5"> break</p>
+                            <p class="ps-4"> case '<strong class="text-danger">fahrenheit</strong>':</p>
+                            <p class="ps-5"> document.getElementById( &#96; ${<strong
+                                    class="text-success">equivalent</strong>}-temp &#96;
+                                ).value =
+                                parseFloat((parseFloat(value) *
+                                1.8) + 32).toFixed(2)</p>
+                            <p class="ps-5"> break</p>
+                            <p class="ps-3"> }</p>
+                            <p class="ps-2"> }</p>
+                            <p class="ps-2"> else if (value === '' || value === 0)</p>
+                            <p class="ps-3"> document.getElementById( &#96; ${<strong
+                                    class="text-success">equivalent</strong>}-temp &#96; )
+                                = 0</p>
+                            <p>}</p>
+                            <hr>
+                            <p>let <strong class="text-warning">celsius</strong> = document.getElementById('<strong
+                                    class="text-warning">celsius</strong>-temp')</p>
+                            <p>let <strong class="text-danger">fahrenheit</strong> = document.getElementById('<strong
+                                    class="text-danger">fahrenheit</strong>-temp')</p>
+                            <p><strong class="text-warning">celsius</strong>.oninput = e => converter('<strong
+                                    class="text-danger">fahrenheit</strong>', e.target.value)</p>
+                            <p><strong class="text-danger">fahrenheit</strong>.oninput = e => converter('<strong
+                                    class="text-warning">celsius</strong>', e.target.value)</p>
                         </div>
                     </div>
                 </div>
@@ -66,14 +86,17 @@
                             <h2>Temperature Converter</h2>
                         </div>
                         <div class="card-body d-flex flex-column gap-2">
-                            <div class="form-floating">
-                                <input type="number" name="" id="celsius-temp" class="form-control" value="0">
-                                <label for="celsius-temp">Celsius</label>
+                            <div class="d-flex gap-3 justify-content-center">
+                                <div class="form-floating">
+                                    <input type="number" name="" id="celsius-temp" class="form-control" value="0">
+                                    <label for="celsius-temp">Celsius</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="number" name="" id="fahrenheit-temp" class="form-control" value="0">
+                                    <label for="fahrenheit-temp">Fahrenheit</label>
+                                </div>
                             </div>
-                            <div class="form-floating">
-                                <input type="number" name="" id="fahrenheit-temp" class="form-control" value="0">
-                                <label for="fahrenheit-temp">Fahrenheit</label>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -83,4 +106,5 @@
     <!-- custom js -->
     <script src="../public/js/4-temperature-converter.js" defer></script>
 </body>
+
 </html>

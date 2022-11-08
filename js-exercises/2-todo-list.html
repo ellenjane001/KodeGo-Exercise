@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +18,11 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer></script>
 </head>
+
 <body onload="fetch_todo()">
     <main>
         <!-- navigation -->
-        <div class="container-fluid d-flex ps-xl-4">
+        <div class="container d-flex ps-xl-4">
             <div class="back d-flex align-items-center gap-3 p-2">
                 <!-- back to index -->
                 <a id="back" href="../index.html"><i class="fa-solid fa-house fa-flip fa-2x"
@@ -30,7 +32,7 @@
                         style="--fa-animation-duration: 4s;"></i></a>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <!-- solution script -->
                 <div class="col">
@@ -39,24 +41,32 @@
                             <h2>Solution Script</h2>
                         </div>
                         <div class="card-body text-bg-dark">
-                            <p>let <strong class="text-warning">ol</strong> = document.getElementById('todo-list')</p>
-                            <p>var <strong class="text-primary">li</strong> =
-                                document.createElement("<strong class="text-primary">li</strong>")</p>
-                            <p>let todo_input = document.getElementById('to-do')</p>
-                            <p>do {</p>
-                            <p class="ps-2">if (todo_input.value !== '') {</p>
-                            <p class="ps-4"><strong
-                                    class="text-primary">li</strong>.appendChild(document.createTextNode(todo_input.value))
+                            <p>let <strong class="text-danger">todo_array</strong> = ['Learn Javascript', 'Learn API',
+                                'Connect to API',
+                                'Create a Website']
                             </p>
-                            <p class="ps-4"><strong class="text-warning">ol</strong>.appendChild(<strong
-                                    class="text-primary">li</strong>)</p>
-                            <p class="ps-4">todo_input.value = ''</p>
-                            <p class="ps-4">i = 0</p>
-                            <p class="ps-2">} else {</p>
-                            <p class="ps-4">todo_input.style.border = 'red solid 1px'</p>
-                            <p class="ps-4">i = 0</p>
-                            <p class="ps-2">}
-                            <p>} while (i == 1)</p>
+                            <p>let ol = document.getElementById('todo-list')</p>
+                            <p>let todo_input = document.getElementById('to-do')</p>
+                            <hr>
+                            <p>const fetch_todo = () =&gt; <strong class="text-warning">{</strong></p>
+                            <p>let i = 0</p>
+                            <p><strong class="text-success">do</strong> <strong class="text-info">{</strong></p>
+                            <p>append_todo(<strong class="text-danger">todo_array</strong>[i++])</p>
+                            <strong class="text-info">}</strong>
+                            <p><strong class="text-success">while</strong> (i &lt; <strong
+                                    class="text-danger">todo_array</strong>.length)
+                                <strong class="text-warning">}</strong>
+                            </p>
+                            <hr>
+                            <p>const append_todo = (value) => {</p>
+                            <p>var li = document.createElement("li")</p>
+                            <p>li.classList.add('p-2')</p>
+                            <p>li.classList.add('border')</p>
+                            <p>li.classList.add('m-1')</p>
+                            <p>li.appendChild(document.createTextNode(value))</p>
+                            <p>ol.appendChild(li)</p>
+                            <p>}</p>
+
                         </div>
                     </div>
                 </div>
@@ -85,4 +95,5 @@
     <!-- custom js -->
     <script src="../public/js/2-todo-list.js" defer></script>
 </body>
+
 </html>

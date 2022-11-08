@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +16,10 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"
         defer></script>
 </head>
+
 <body>
     <main>
-        <div class="container-fluid d-flex ps-xl-4">
+        <div class="container d-flex ps-xl-4">
             <div class="back d-flex align-items-center gap-3 p-2">
                 <!-- back to index -->
                 <a id="back" href="../index.html"><i class="fa-solid fa-house fa-flip fa-2x"
@@ -27,6 +29,48 @@
                         style="--fa-animation-duration: 4s;"></i></a>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <!-- solution -->
+                <div class="col">
+                    <div class="card m-3">
+                        <div class="card-header text-center">
+                            <h2>Solution Script</h2>
+                        </div>
+                        <div class="card-body text-bg-dark">
+                        </div>
+                    </div>
+                </div>
+                <!-- output -->
+                <div class="col">
+                    <div class="card m-3">
+                        <div class="card-header text-center">
+                            <h2>Height in Meters</h2>
+                        </div>
+                        <div class="card-body d-flex flex-column gap-3">
+                            <div class="height-wrapper d-flex justify-content-center align-items-center gap-2">
+                                <div class="form-floating">
+                                    <input type="number" value="0" class="form-control" id="foot">
+                                    <label for="foot">Foot</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="number" value="0" class="form-control" id="inches">
+                                    <label for="inches">Inches</label>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-primary m-2" id="convert">Convert</button>
+                            <!-- results -->
+                            <div id="result">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <!-- custom js -->
+    <script src="../public/js/5-height-in-meters.js"></script>
 </body>
+
 </html>
