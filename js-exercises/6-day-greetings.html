@@ -38,6 +38,57 @@
                             <h2>Solution Script</h2>
                         </div>
                         <div class="card-body text-bg-dark">
+                            <p>document.getElementById('greet').onclick = () => {</p>
+                            <p>let greetings = document.getElementById('greetings')</p>
+                            <p>let date = document.getElementById('date')</p>
+                            <p>let week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+                            </p>
+                            <p>if (date.value) {</p>
+                            <p>let g = ''</p>
+                            <p>switch (date.value.toUpperCase()[0] + date.value.substring(1)) {</p>
+                            <p>case week[0]:</p>
+                            <p>g = `Sending you my warmest greetings of <strong>${week[0]}</strong>, mate. Have a great
+                                day! `</p>
+                            <p>/* quotes from</p>
+                            (https://www.wishesmsg.com/sunday-wishes-messages/#:~:text=Happy%20Sunday!,laughter%2C%20joy%2C%20and%20happiness.)*/
+                            <p>date.value = ''</p>
+                            <p>break</p>
+                            <p>case week[1]:</p>
+                            <p>g = `Have a marvelous <strong>${week[1]}</strong> and a wonderful week!`</p>
+                            /* quotes from
+                            (https://allwording.com/have-a-great-monday/#:~:text=Hope%20your%20week%20gets%20off,most%20of%20the%20week%20ahead!)*/
+                            <p>break</p>
+                            <p>case week[2]:</p>
+                            <p>g = `<strong>${week[2]}</strong> merely means that you made it through Monday, which is
+                                an accomplishment. To you, have</p>
+                            a happy <strong>${week[2]}</strong>.`
+                            <p>/* quotes from (https://www.143greetings.com/tuesday-messages.html)*/</p>
+                            <p>break</p>
+                            <p>case week[3]:</p>
+                            <p>g = `Happy <strong>${week[3]}</strong>! Cheer up! there are still two days left until the
+                                weekend.`</p>
+                            <p>/* quotes from (https://www.wishesmsg.com/wednesday-wishes-messages/)*/</p>
+                            <p>break</p>
+                            <p>case week[4]:</p>
+                            <p>g = `Focus on what you want in life rather than what you have achieved. Happy
+                                ${week[4]}!`</p>
+                            <p>/* quotes from (https://www.wedskenya.com/thursday-wishes-messages/)*/</p>
+                            <p>break</p>
+                            <p>case week[5]:</p>
+                            <p>g = `Good morning and happy ${week[5]}. Expect greatness today.`</p>
+                            <p>/* quotes from (https://poemore.com/daily-messages/friday-wishes-messages/)*/</p>
+                            <p>break</p>
+                            <p>case week[6]:</p>
+                            <p>g = `Wish you have a blissful weekend. Happy ${week[6]}!`</p>
+                            <p>break</p>
+                            <p>default:</p>
+                            <p>g = 'Invalid day'</p>
+                            <p>}</p>
+                            <p>greetings.innerHTML = g</p>
+                            <p>}</p>
+
+
+                            <p>}</p>
                         </div>
                     </div>
                 </div>
@@ -47,12 +98,24 @@
                         <div class="card-header text-center">
                             <h2>Day Greetings</h2>
                         </div>
-                        <div class="card-body text-bg-dark"></div>
+                        <div class="card-body d-flex flex-column gap-2">
+                            <div class="form-floating">
+                                <input type="text" id="date" class="form-control">
+                                <label for="date">Input day of the Week</label>
+                            </div>
+                            <button class="btn btn-outline-primary" id="greet">Greet</button>
+
+                            <div id="greetings" class="text-center">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <!-- custom js -->
+    <script src="../public/js/6-day-greetings.js" defer></script>
 </body>
 
 </html>

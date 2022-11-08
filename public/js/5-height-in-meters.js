@@ -3,6 +3,7 @@ const height_converter = () => {
     let inches = document.getElementById('inches')
     // formula d(m) = d(ft) × 0.3048 + d(in) × 0.0254 
     if (foot.value !== '' || inches.value !== '') {
+        // boostrap alert
         alert(`${foot.value} foot and ${inches.value} inches is ${parseFloat(foot.value * 0.3048 + inches.value * 0.0254).toFixed(2)} in Meters`, 'info')
     }
 }
@@ -21,7 +22,7 @@ const alert = (message, type) => {
     ].join('')
     alertPlaceholder.append(wrapper)
     setTimeout(function () {
-        alertPlaceholder.removeChild(alertPlaceholder.firstChild)
+        alertPlaceholder.removeChild(alertPlaceholder.firstElementChild)
     }, 5000);
 }
 

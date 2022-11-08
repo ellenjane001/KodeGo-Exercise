@@ -27,6 +27,6 @@ const alert = (message, type) => {
     ].join('')
     alertPlaceholder.append(wrapper)
     setTimeout(function () {
-        alertPlaceholder.removeChild(alertPlaceholder.firstChild)
+        alertPlaceholder.removeChild(alertPlaceholder.firstElementChild)
     }, 5000);
 }

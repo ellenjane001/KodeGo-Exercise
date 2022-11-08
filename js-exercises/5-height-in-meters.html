@@ -9,6 +9,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../public/css/js-5-height-in-meter.css">
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/b140af86b3.js" crossorigin="anonymous" defer></script>
     <!-- JavaScript Bundle with Popper -->
@@ -38,6 +40,28 @@
                             <h2>Solution Script</h2>
                         </div>
                         <div class="card-body text-bg-dark">
+                            <p>const height_converter = () => {</p>
+                            <p class="ps-2">let <strong class="text-info">foot</strong> =
+                                document.getElementById('<strong class="text-info">foot</strong>')
+                            </p>
+                            <p class="ps-2">let <strong class="text-warning">inches</strong> =
+                                document.getElementById('<strong class="text-warning">inches</strong>')</p>
+                            <p class="ps-2 text-success">// formula d(m) = d(ft) × 0.3048 + d(in) × 0.0254</p>
+                            <p class="ps-2">if (<strong class="text-info">foot</strong>.value !== '' || <strong
+                                    class="text-warning">inches</strong>.value !==
+                                '') {</p>
+                            <p class="ps-3 text-success">// boostrap alert</p>
+                            <p class="ps-3">alert(`${<strong class="text-info">foot</strong>.value} foot and
+                                ${<strong class="text-warning">inches</strong>.value}
+                                inches is
+                                ${parseFloat(<strong class="text-info">foot</strong>.value * 0.3048
+                                + <strong class="text-warning">inches</strong>.value * 0.0254).toFixed(2)} in Meters`,
+                                'info')</p>
+                            <p class="ps-2">}</p>
+                            <p>}</p>
+
+                            <p>document.getElementById('convert').onclick = height_converter</p>
+
                         </div>
                     </div>
                 </div>
