@@ -46,5 +46,7 @@ document.getElementById('greet').onclick = () => {
                 break
         }
         greetings.innerHTML = g
+    } else {
+        date.style.border = 'red 1px solid'
     }
 }

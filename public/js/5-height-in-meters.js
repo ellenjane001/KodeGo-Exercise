@@ -6,6 +6,7 @@ const height_converter = () => {
         // boostrap alert
         alert(`${foot.value} foot and ${inches.value} inches is ${parseFloat(foot.value * 0.3048 + inches.value * 0.0254).toFixed(2)} in Meters`, 'info')
     }
+
 }
 document.getElementById('convert').onclick = height_converter
 const alertPlaceholder = document.getElementById('result')

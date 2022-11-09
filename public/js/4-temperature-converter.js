@@ -11,8 +11,11 @@ const converter = (equivalent, value) => {
                 break
         }
     }
-    else if (value === '' || value === 0)
-        document.getElementById(`${equivalent}-temp`) = 0
+    else if (value === '' || value === 0) {
+        document.getElementById(`${equivalent}-temp`).value = 0
+    }
+
+
 }
 let celsius = document.getElementById('celsius-temp')
 let fahrenheit = document.getElementById('fahrenheit-temp')
