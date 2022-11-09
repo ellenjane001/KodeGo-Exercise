@@ -33,67 +33,6 @@
         </div>
         <div class="container">
             <div class="row">
-                <!-- solution -->
-                <div class="col">
-                    <div class="card m-3">
-                        <div class="card-header text-center">
-                            <h2>Solution Script</h2>
-                        </div>
-                        <div class="card-body text-bg-dark">
-                            <p>document.getElementById('greet').onclick = () => {</p>
-                            <p>let greetings = document.getElementById('greetings')</p>
-                            <p>let date = document.getElementById('date')</p>
-                            <p>let week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-                            </p>
-                            <p>if (date.value) {</p>
-                            <p>let g = ''</p>
-                            <p>switch (date.value.toUpperCase()[0] + date.value.substring(1)) {</p>
-                            <p>case week[0]:</p>
-                            <p>g = `Sending you my warmest greetings of <strong>${week[0]}</strong>, mate. Have a great
-                                day! `</p>
-                            <p>/* quotes from</p>
-                            (https://www.wishesmsg.com/sunday-wishes-messages/#:~:text=Happy%20Sunday!,laughter%2C%20joy%2C%20and%20happiness.)*/
-                            <p>date.value = ''</p>
-                            <p>break</p>
-                            <p>case week[1]:</p>
-                            <p>g = `Have a marvelous <strong>${week[1]}</strong> and a wonderful week!`</p>
-                            /* quotes from
-                            (https://allwording.com/have-a-great-monday/#:~:text=Hope%20your%20week%20gets%20off,most%20of%20the%20week%20ahead!)*/
-                            <p>break</p>
-                            <p>case week[2]:</p>
-                            <p>g = `<strong>${week[2]}</strong> merely means that you made it through Monday, which is
-                                an accomplishment. To you, have</p>
-                            a happy <strong>${week[2]}</strong>.`
-                            <p>/* quotes from (https://www.143greetings.com/tuesday-messages.html)*/</p>
-                            <p>break</p>
-                            <p>case week[3]:</p>
-                            <p>g = `Happy <strong>${week[3]}</strong>! Cheer up! there are still two days left until the
-                                weekend.`</p>
-                            <p>/* quotes from (https://www.wishesmsg.com/wednesday-wishes-messages/)*/</p>
-                            <p>break</p>
-                            <p>case week[4]:</p>
-                            <p>g = `Focus on what you want in life rather than what you have achieved. Happy
-                                ${week[4]}!`</p>
-                            <p>/* quotes from (https://www.wedskenya.com/thursday-wishes-messages/)*/</p>
-                            <p>break</p>
-                            <p>case week[5]:</p>
-                            <p>g = `Good morning and happy ${week[5]}. Expect greatness today.`</p>
-                            <p>/* quotes from (https://poemore.com/daily-messages/friday-wishes-messages/)*/</p>
-                            <p>break</p>
-                            <p>case week[6]:</p>
-                            <p>g = `Wish you have a blissful weekend. Happy ${week[6]}!`</p>
-                            <p>break</p>
-                            <p>default:</p>
-                            <p>g = 'Invalid day'</p>
-                            <p>}</p>
-                            <p>greetings.innerHTML = g</p>
-                            <p>}</p>
-
-
-                            <p>}</p>
-                        </div>
-                    </div>
-                </div>
                 <!-- output -->
                 <div class="col">
                     <div class="card m-3">
@@ -106,13 +45,104 @@
                                 <label for="date">Input day of the Week</label>
                             </div>
                             <button class="btn btn-outline-primary" id="greet">Greet</button>
-
                             <div id="greetings" class="text-center">
-
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- solution -->
+                <div class="col">
+                    <div class="card m-3">
+                        <div class="card-header text-center">
+                            <h2>Solution Script</h2>
+                        </div>
+                        <div class="card-body text-bg-dark">
+                            <p>document.getElementById('greet').onclick = () => {</p>
+                            <p class="ps-2">let greetings = document.getElementById('greetings')</p>
+                            <p class="ps-2">let date = document.getElementById('date')</p>
+                            <p class="ps-2">let <strong class="text-danger">week</strong> = ['Sunday', 'Monday',
+                                'Tuesday', 'Wednesday', 'Thursday',
+                                'Friday', 'Saturday']
+                            </p>
+                            <p class="ps-2">if (date.value) {</p>
+                            <p class="ps-3">let <strong class="text-info">g</strong> = ''</p>
+                            <p class="ps-3">switch (date.value.toUpperCase()[0] + date.value.substring(1)) {</p>
+                            <p class="ps-4">case week[0]:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = `Sending you my warmest greetings of
+                                ${<strong class="text-danger">week</strong>[0]}, mate.
+                                Have a great
+                                day! `</p>
+                            <p class="ps-5 small text-muted">/* quotes from
+                                (https://www.wishesmsg.com/sunday-wishes-messages/#:~:text=Happy%20Sunday!,laughter%2C%20joy%2C%20and%20happiness.)*/
+                            </p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-4">case week[1]:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = `Have a marvelous ${<strong
+                                    class="text-danger">week</strong>[1]} and a
+                                wonderful week!`</p>
+                            <p class="ps-5 small text-muted">/* quotes from
+                                (https://allwording.com/have-a-great-monday/#:~:text=Hope%20your%20week%20gets%20off,most%20of%20the%20week%20ahead!)*/
+                            </p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-4">case week[2]:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = `${<strong
+                                    class="text-danger">week</strong>[2]} merely means that you
+                                made it through
+                                Monday, which is
+                                an accomplishment. To you, Have
+                                a happy ${<strong class="text-danger">week</strong>[2]}.`</p>
+                            <p class="ps-5 small text-muted">/* quotes from
+                                (https://www.143greetings.com/tuesday-messages.html)*/</p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-4">case week[3]:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = `Happy ${<strong
+                                    class="text-danger">week</strong>[3]}! Cheer up! there
+                                are still two days
+                                left until the
+                                weekend.`</p>
+                            <p class="ps-5 small text-muted">/* quotes from
+                                (https://www.wishesmsg.com/wednesday-wishes-messages/)*/</p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-4">case week[4]:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = `Focus on what you want in life
+                                rather than what you have achieved.
+                                Happy
+                                ${<strong class="text-danger">week</strong>[4]}!`</p>
+                            <p class="ps-5 small text-muted">/* quotes from
+                                (https://www.wedskenya.com/thursday-wishes-messages/)*/</p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-4">case week[5]:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = `Good morning and happy ${<strong
+                                    class="text-danger">week</strong>[5]}.
+                                Expect greatness today.`</p>
+                            <p class="ps-5 small text-muted">/* quotes from
+                                (https://poemore.com/daily-messages/friday-wishes-messages/)*/</p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-4">case week[6]:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = `Wish you have a blissful weekend.
+                                Happy ${<strong class="text-danger">week</strong>[6]}!`</p>
+                            <p class="ps-5 small text-muted">/* quotes from
+                                https://www.wishesmsg.com/saturday-wishes-messages/ */</p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-4">default:</p>
+                            <p class="ps-5"><strong class="text-info">g</strong> = 'Invalid day'</p>
+                            <p class="ps-5">date.value = ''</p>
+                            <p class="ps-5">break</p>
+                            <p class="ps-3">}</p>
+                            <p class="ps-3">greetings.innerHTML = <strong class="text-info">g</strong></p>
+                            <p class="ps-2">}</p>
+                            <p>}</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
