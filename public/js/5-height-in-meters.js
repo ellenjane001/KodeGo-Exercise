@@ -4,7 +4,7 @@ const height_converter = () => {
     // formula d(m) = d(ft) × 0.3048 + d(in) × 0.0254 
     if (foot.value !== '' || inches.value !== '') {
         // boostrap alert
-        alert(`${foot.value} foot and ${inches.value} inches is ${parseFloat(foot.value * 0.3048 + inches.value * 0.0254).toFixed(2)} in Meters`, 'info')
+        alert(`${foot.value} foot and ${inches.value} inches is ${Math.round(parseFloat(foot.value * 0.3048 + inches.value * 0.0254)).toFixed(2)} in Meters`, 'info')
     }
 
 }
