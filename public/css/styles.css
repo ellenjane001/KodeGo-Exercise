@@ -14,8 +14,6 @@ html body header {
   gap: 8px;
   height: 75px;
   box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.4);
   padding: 3px 15px;
   color: #FBD46D;
   background-color: #222831;
@@ -24,41 +22,19 @@ html body header h1 {
   padding: 0;
   margin: 0;
 }
-html body div.container {
-  height: 50vh;
+html body .container > .row > .col > * {
+  margin: 10px;
+}
+html body .row.row-cols-1.gap-2 > .col > * {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
-html body div.container div.section-container {
-  text-align: center;
-  padding: 1rem;
-  display: inline-flex;
-  flex-direction: column;
-}
-html body div.container div.section-container div.button-container {
-  height: 100%;
-  margin: 0.5rem;
-  gap: 10px;
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-html body div.container div.section-container div.button-container a {
-  border: solid 0.01px #222831;
-  padding: 0.5rem;
-  color: #222831;
-  text-decoration: none;
-  border-radius: 5px;
-}
-html body div.container div.section-container div.button-container a:visited {
-  color: #222831;
-}
-html body div.container div.section-container div.button-container a:hover {
-  color: #222831;
-  border: solid 0.01px #FBD46D;
-}
-html body div.container div.section-container h4 {
-  color: #222831;
-  margin: 0;
-  padding: 1rem;
+@media (max-width: 600px) {
+  html body .row-cols-3 > * {
+    width: 100%;
+  }
+  html body h2 {
+    font-size: small;
+  }
 }/*# sourceMappingURL=styles.css.map */

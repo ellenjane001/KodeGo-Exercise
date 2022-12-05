@@ -2,7 +2,6 @@
 @import 'partials/fonts';
 
 html {
-
     body {
         box-sizing: border-box;
         padding: 0;
@@ -17,9 +16,9 @@ html {
             flex-direction: row-reverse;
             gap: 8px;
             height: 75px;
-            box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
             -webkit-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
             -moz-box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
+            box-shadow: 1px 4px 8px -4px rgba(0, 0, 0, 0.40);
             padding: 3px 15px;
 
             h1 {
@@ -31,50 +30,22 @@ html {
             background-color: $c3;
         }
 
-        div.container {
-            height: 50vh;
+        .container>.row>.col>* {
+            margin: 10px;
+        }
+
+        .row.row-cols-1.gap-2>.col>* {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
 
-            div.section-container {
-                text-align: center;
-                padding: 1rem;
-                display: inline-flex;
-                flex-direction: column;
-
-                div.button-container {
-                    height: 100%;
-                    margin: 0.5rem;
-                    gap: 10px;
-                    display: inline-flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    a {
-                        border: solid 0.01px $c3;
-                        padding: 0.5rem;
-                        color: $c3;
-                        text-decoration: none;
-                        border-radius: 5px;
-
-                        &:visited {
-                            color: $c3;
-                        }
-
-                        &:hover {
-                            color: $c3;
-                            border: solid 0.01px $c1;
-
-                        }
-                    }
-                }
-
-                h4 {
-                    color: $c3;
-                    margin: 0;
-                    padding: 1rem;
-                }
-
-
+        @media (max-width:600px) {
+            .row-cols-3>* {
+                width: 100%;
+            }
+            h2{
+                font-size: small;
             }
         }
     }
